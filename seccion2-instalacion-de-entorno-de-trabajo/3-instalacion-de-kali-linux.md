@@ -127,5 +127,5 @@ Lo que nos permitirá cambiar la contraseña del usuario, en este caso, el usuar
 podremos acceder a la cuenta root en nuestro sistema.
 
 Ahora, o bien reiniciamos nuestro sistema o cerramos la sesión actual. Y en vez de logearnos como nuestro usuario normal, vamos a logearnos como
+el usuario root y la contraseña que colocamos anteriormente.
 
-con el usuario root y la contraseña que colocamos anteriormente.
