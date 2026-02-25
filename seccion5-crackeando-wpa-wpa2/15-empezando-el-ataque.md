@@ -54,9 +54,10 @@ El **modo monitor** sirve para capturar todo el tráfico que está en la red.
 Ahora, hacemos:
 
 ```bash
-sudo airdump-ng wlan0mon
+sudo airodump-ng wlan0mon
 ```
 
 Aquí va a estar mapeando todas las redes Wi-Fi que encuentra, y vamos a elegir la víctima que queremos hackear. Elegimos la red de nuestra casa.
+
 
 Una vez que tenemos el objetivo elegido, vamos a realizar una captura de **Handshake**.
