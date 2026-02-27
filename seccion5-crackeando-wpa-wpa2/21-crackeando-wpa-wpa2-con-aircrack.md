@@ -7,7 +7,7 @@ Vamos a ver cómo crackear una red Wi-Fi WPA2 con `aircrack-ng`.
 Ejecutamos:
 
 ```bash
-sudo aircrack-ng -w diccionario2 -b <> Cap-01.cap
+sudo aircrack-ng -w diccionario2 -b <AP-BSSID> Cap-01.cap
 ```
 
 * `-w`: Para poner el diccionario, para realizar el ataque de fuerza bruta. Podemos descargar uno de Internet o usar el que nos convenga, en este caso usamos uno del proveedor de Internet, porque son muy fáciles de adivinar ya que es una secuencia que se repite en todas las redes Wi-Fi
